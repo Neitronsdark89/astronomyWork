@@ -1,0 +1,376 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: roboto, times, serif; font-style: normal;
+}
+body {
+	background-image: url("../img/galaxy.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	animation-name: planet, sun, astronout;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: normal;
+}
+#linkActive {
+	text-decoration: underline;
+	color: #f76bfa;
+}
+h1 {
+	text-align: center;
+	margin-top: 30px;
+	position: relative;
+	color: white;
+	font-family: Georgia;
+	font-size: 40px;
+	font-style: normal;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+h2 {
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
+p {
+	padding: 5px;
+	color: #f54df9;
+	font-size: 25px;
+}
+.imgInTable {
+	width: auto;
+	height: 50px;
+}
+div {
+	display: block;
+}
+li {
+	font-size: 25px;
+	display: list-item;
+}	
+ul li {
+		list-style-type: none;
+		margin-left: 20px;
+		padding: 10px;
+		text-shadow: 2px 2px #000000;
+}
+a {
+	text-decoration: none;
+	color: #f54df9;
+	transition: background-color 0.5s;
+}
+nav {
+	text-align: center;
+}
+nav li {
+	margin-top: 20px;
+	display: inline-block;
+	padding: 20px;
+	text-align: justify;
+	font-size: 30px;
+}	
+center {
+	display: flex;
+	flex-direction: row;
+}
+content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+main {
+	width: auto;
+	height: 60%;
+	margin-bottom: 10%;
+}
+form {
+	background: black;
+	width: 440px;
+	height: auto;
+	opacity: 0.9;
+}
+.errorScope {
+	 width: 80px;
+	 height: 60px;
+}
+.mail {
+	width: 50px; 
+	height: 50px;
+}
+.logo {
+	width: 150px;
+	height: 150px;
+}
+a.logo {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #f76bfa;
+}	
+.kontaktu_saraksts {
+	position: absolute;
+	font-size: 30px;
+	color: black;
+	left: 40%;
+	padding: 10px;
+	margin-top: 20px;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.9;
+}
+.sazinasForma {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+input {
+	width: 150px;
+	height: 30px;
+	padding: 3px;
+}
+td {
+	padding: 10px;
+	text-align: center;
+}
+.tablePos {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 20px;
+}
+#qvestion {
+	padding: 7px;
+}
+#clock {
+	color: #ECC249; 
+	text-shadow: 2px 2px #000000;
+	text-align: center;
+	position: relative;
+	font-family: Georgia;
+	font-size: 30px;
+	margin-top: 100px;
+}
+textarea {
+  resize: none;
+}
+#readDoc {
+	padding: 0px;
+	width: 15px;
+	height: 15px;
+}
+.grid-container {
+	display: grid;
+	align-items: center;
+	justify-items: end;	
+}
+.grid-item {
+	padding: 15px;
+	text-align: center;
+}
+label {
+	padding: 5px;
+}
+.iconMove {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+} 
+.videoControl {
+	margin-top: 20px;
+	height: 20em;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+a.fa {
+	text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.8;
+	color: black;
+}
+.fa {  
+	padding: 20px;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 5px 40px;
+	border-radius: 50%;
+	
+}
+.fa-linkedin-square {
+	background: #5922D9;
+	color: white;
+}
+.fa-facebook {
+    background: #2274D9;
+    color: white;
+}
+.fa-twitter {
+    background: #ff5700;
+    color: white;
+}
+.fa-instagram {
+	background: #F928C5;
+	color: white;
+}  
+.main_logo {
+	padding: 20px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.nav_panel {
+	margin-top: -135px;
+}
+.list_of_topics {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 40px;
+}
+#parMumsP {
+	text-indent: 50px;
+	left: 40%;
+	text-align: justify;
+	margin-top: 20px;
+	position: absolute;
+	width: 400px;
+	color: white;
+	font-size: 25px;
+}
+#footer {
+  position: fixed;
+  bottom: 30px;
+  width: 100%;
+  height: 2.5rem;
+}
+/* Element object values */	
+.astronout_move {
+	left: 100px;
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+}	
+.sun {
+	width: auto;
+	height: 70%;
+	position: fixed;
+	right: -10%;
+	top: -30%;
+	animation: sun 720s infinite;
+	flex-direction: column;
+	display: block;
+	z-index: -5;	
+}
+.planet {
+	width: auto;
+	height: 130%; /* width: auto; height: ...%; to make fixed object */
+	position: fixed;
+	display: block;
+	flex-direction: column;
+	right: 30%;
+	top: 30%;
+	animation: planet 300s infinite;
+	z-index: -4;	
+}
+.planet_ship {
+	width: 600px;
+	height: auto;
+	display: block;
+	flex-direction: column;
+	position: absolute;
+	top: 400px;
+	left: 370px;
+	animation: planet_ship 10s,
+	planet_ship_out 10s;
+	animation-fill-mode: both;
+	animation-delay: -1s;
+	z-index: -1;
+}
+.rock {
+	width: 100%;
+	height: 20%;
+	bottom: 0px;
+	position: fixed;
+	z-index: -3;	
+}
+.astronout {
+	width: 600px; 
+	height: auto;
+	display: block;
+	position: absolute;
+	animation: astronout 6s infinite;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	z-index: -2;
+}
+.text-pop-up-bottom {
+	animation: text-pop-up-bottom .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+/* Keyframes for dinamic background objects */
+@keyframes planet {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(359deg);}
+	}
+@keyframes sun {
+  0% {transform: rotate(359deg);}
+  100% {transform: rotate(0deg);}
+	}
+@keyframes planet_ship {
+  from {
+	transform: translateY(0%);
+	width: 100px;
+	}  
+  25% {
+    transform: translateY(25%);
+	}
+  50% {
+    transform: translateY(50%);
+	}
+    75% {
+    transform: translateY(75%);
+	}
+    to {
+    transform: translateY(100%);
+	width: 500px;
+	}
+}
+@keyframes planet_ship_out {
+	0% {
+        transform: translateX(0px);
+		right: 50px;
+	}
+    100% {
+        transform: translateX(300px);
+		right: 0px;
+	}
+} 
+@keyframes astronout {
+	0% {
+		transform: translateY(0px);
+		left: 0px;
+	}
+    100% {
+		transform: translateY(20px);
+		left: 10px;
+	}
+}
+@keyframes text-pop-up-bottom {
+	0% {
+		transform:translateY(0);
+		transform-origin:50% 50%;
+		text-shadow:none}
+		100% {
+		transform:translateY(50px);
+		transform-origin:50% 50%;
+		text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}
+		}
